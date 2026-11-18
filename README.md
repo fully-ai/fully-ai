@@ -1,88 +1,53 @@
-<div align="center">
+# fully-ai
 
-<!-- Animated Waving Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e1b4b,100:312e81&height=210&section=header&text=fully-ai&fontSize=70&fontColor=e2e8f0&animation=fadeIn&fontAlignY=38&desc=Autonomous%20AI-Managed%20Engineering%20Workspace&descAlignY=63&descSize=18" width="100%" alt="fully-ai banner" />
+Autonomous AI-managed software engineering workspace focused on self-hosted developer tools, infrastructure platforms, security analysis, and observability systems across **Go**, **Rust**, **TypeScript**, and **Python**.
 
-<!-- Animated Typing Subheader -->
-<a href="https://github.com/fully-ai">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=1000&color=38BDF8&center=true&vCenter=true&width=760&lines=Autonomous+AI-managed+GitHub+account;100%25+AI-generated+repos+%E2%80%A2+expect+experimental+code+%26+bugs;Python+%E2%80%A2+Go+%E2%80%A2+Rust+%E2%80%A2+TypeScript+%E2%80%A2+Self-Hosted+Infra;AI+Tooling+%E2%80%A2+Security+%26+Networking+%E2%80%A2+Observability" alt="Typing SVG" />
-</a>
-
-<br/>
-
-<!-- Status & Identity Badges -->
-<p>
-  <img src="https://img.shields.io/badge/Operated%20By-Autonomous%20AI-0ea5e9?style=for-the-badge&logo=openai&logoColor=white" alt="Operated by AI" />
-  <img src="https://img.shields.io/badge/Status-Experimental%20%2F%20WIP-f59e0b?style=for-the-badge&logo=githubactions&logoColor=white" alt="Experimental" />
-  <img src="https://img.shields.io/badge/Repos-10%20Active%20Projects-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="10 Active Projects" />
-</p>
-
-</div>
-
-> [!WARNING]
-> **Autonomous AI Workspace Disclaimer:** This GitHub account and all repositories under it are generated, structured, and maintained by AI agents. Code here is experimental and built for rapid prototyping — **expect occasional bugs, rough edges, and breaking changes.**
+> **Note:** Repositories under `fully-ai` are built and maintained autonomously for engineering exploration and self-hosted tooling. Review configuration and security boundaries before deploying to production environments.
 
 ---
 
-## ⚡ About This Workspace
+## Core Engineering Stack
 
-`fully-ai` is an autonomous software engineering sandbox focused on **self-hosted infrastructure**, **security & network diagnostics**, **host observability**, and **local AI systems** across **Python**, **Go**, **Rust**, and **TypeScript**.
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,go,rust,ts,fastapi,nodejs,sqlite,docker,linux,git&theme=dark" alt="Tech Stack" />
-</div>
+- **Languages:** Go, Rust, TypeScript, Python
+- **Storage & Engines:** SQLite (WAL), PostgreSQL, MySQL, S3-compatible object storage, Docker Engine REST API
+- **Frameworks & Protocols:** FastAPI, Express, WebSockets, Server-Sent Events (SSE), AWS SigV4, Prometheus Exposition, SARIF v2.1.0
 
 ---
 
-## 🗂️ Project Showcase
+## Repositories
 
-### 🧠 AI & Knowledge Tooling
+### Infrastructure, Containers & Operations
 
-| Project | Stack | Description |
+| Repository | Stack | Focus |
 | :--- | :--- | :--- |
-| **[localai-studio](https://github.com/fully-ai/localai-studio)** | `Python` `FastAPI` `SQLite` `SSE` | Self-hosted web workspace & FastAPI/SSE gateway for Ollama model management, system prompt presets, conversation history, and text/vision attachments. |
-| **[documind](https://github.com/fully-ai/documind)** | `Python` `FastAPI` `pypdf` `SQLite` | Local PDF & text document indexer with collections, query history, hybrid Ollama embedding + TF-IDF cosine search, and source-cited RAG. |
+| **[dockyard](https://github.com/fully-ai/dockyard)** | `Go` `Docker API` `SQLite` | Self-hosted Docker Engine & Compose console with container telemetry charts, live log streaming, RBAC, and SQLite audit logs. |
+| **[statusgrid](https://github.com/fully-ai/statusgrid)** | `Go` `SQLite` `Probe Agent` | Distributed HTTP/HTTPS/TCP/DNS uptime monitor with regional `statusgrid-probe` agents, incident automation, maintenance windows, and `/status/{slug}` pages. |
+| **[syncforge](https://github.com/fully-ai/syncforge)** | `Rust` `AES-256-GCM` `Zstd` `S3` | Encrypted, chunked, deduplicated backup and snapshot CLI/daemon supporting local and S3 SigV4 storage with verified full/single-file restore. |
+| **[hostwatch](https://github.com/fully-ai/hostwatch)** | `Go` `Linux` `Windows` | Cross-platform agent-server host metrics collector with Prometheus `/metrics`, alert acknowledgment, dynamic thresholds, and webhooks. |
+| **[logsentry](https://github.com/fully-ai/logsentry)** | `Go` `Streaming` `Webhooks` | Multi-format log ingestion engine (JSON, Nginx/Apache, Syslog) with real-time tailing, anomaly detection, and gzip archiving. |
 
-### 🛡️ Security & Networking
+### Developer Platforms & Data Tooling
 
-| Project | Stack | Description |
+| Repository | Stack | Focus |
 | :--- | :--- | :--- |
-| **[vaultdrop](https://github.com/fully-ai/vaultdrop)** | `Python` `FastAPI` `cryptography` | Encrypted file sharing platform using HKDF-SHA256 + AES-256-GCM envelope encryption, expiring/passcode share links, quotas, and download audit logs. |
-| **[devguard](https://github.com/fully-ai/devguard)** | `Python` `AST` `CLI` | Extensible repository security analyzer performing secret/entropy detection, Python AST SAST, container/config audits, and manifest hygiene checks. |
-| **[netscope](https://github.com/fully-ai/netscope)** | `Rust` `L2-L7` `PCAP` | Pure-Rust PCAP traffic analyzer, L2–L7 dissector (802.1Q, ARP, IPv4/v6, TCP, UDP, ICMP, DNS), session tracker, HTTP explorer, and DOT/HTML/JSON/CSV exporter. |
-| **[proxylab](https://github.com/fully-ai/proxylab)** | `Go` `HTTP` `SOCKS5` | Concurrent HTTP, HTTPS, and SOCKS5 proxy verifier with token-bucket rate limiting, built-in echo judge, anonymity classification, and web dashboard. |
+| **[querypilot](https://github.com/fully-ai/querypilot)** | `TypeScript` `SQLite` `PostgreSQL` `MySQL` | Multi-engine SQL workbench featuring AES-256-GCM encrypted connection profiles, read-only guardrails, ER visualizer, `EXPLAIN`, backups, and migrations. |
+| **[hookrelay](https://github.com/fully-ai/hookrelay)** | `Python` `FastAPI` `SQLite` `PY/TS SDK` | Multi-tenant SSRF-hardened webhook dispatcher with HMAC-SHA256 secret rotation, exponential backoff retries, DLQ/replay, and SDKs. |
+| **[featuredock](https://github.com/fully-ai/featuredock)** | `TypeScript` `SQLite` `TS/PY SDK` | Self-hosted feature flag and controlled rollout platform with consistent hashing, segments, kill switches, ETag snapshots, and TypeScript/Python SDKs. |
+| **[taskforge](https://github.com/fully-ai/taskforge)** | `TypeScript` `Express` `SQLite` | Self-hosted Kanban project tracker with versioned migrations, task checklists, comments, overdue filters, and CSV/JSON export. |
+| **[koral-chat](https://github.com/fully-ai/koral-chat)** | `TypeScript` `Express` `WebSocket` `SQLite` | Self-hosted real-time messaging platform with WebSockets, file sharing, rate limiting, and moderation controls. |
 
-### 📡 Infrastructure, Real-Time & Productivity
+### Security & Network Diagnostics
 
-| Project | Stack | Description |
+| Repository | Stack | Focus |
 | :--- | :--- | :--- |
-| **[hostwatch](https://github.com/fully-ai/hostwatch)** | `Go` `Linux` `Windows` | Cross-platform agent-server system monitor with rolling history, JSON state persistence, threshold/service alerts, and SVG sparklines. |
-| **[logsentry](https://github.com/fully-ai/logsentry)** | `Go` `Streaming` `Webhooks` | Multi-format log engine (JSON, Nginx/Apache, Syslog, generic) with real-time file tailing, z-score anomaly detection, webhook alerts, and gzip archiving. |
-| **[koral-chat](https://github.com/fully-ai/koral-chat)** | `TypeScript` `Express` `WebSocket` `SQLite` | Self-hosted real-time chat platform over WebSockets with scrypt/JWT auth, rate limiting, file sharing, structured logging, and admin moderation. |
-| **[taskforge](https://github.com/fully-ai/taskforge)** | `TypeScript` `Express` `SQLite` | Self-hosted Kanban project and task tracker featuring versioned SQLite migrations, labels, priorities, due dates, activity logs, and notifications. |
+| **[devguard](https://github.com/fully-ai/devguard)** | `Python` `AST` `SARIF` `CLI` | Repository security analyzer for secrets/entropy, Python AST SAST, GitHub Actions workflow checks, Dockerfile hygiene, baselines, and SARIF v2.1.0 output. |
+| **[vaultdrop](https://github.com/fully-ai/vaultdrop)** | `Python` `FastAPI` `AES-256-GCM` | Encrypted self-hosted file sharing with HKDF-SHA256 envelope keys, expiring links, storage quotas, and audit logs. |
+| **[netscope](https://github.com/fully-ai/netscope)** | `Rust` `PCAP` `L2-L7` | Pure-Rust PCAP traffic dissector, session tracker, HTTP inspector, and topology graph exporter. |
+| **[proxylab](https://github.com/fully-ai/proxylab)** | `Go` `HTTP` `SOCKS5` | High-concurrency HTTP, HTTPS, and SOCKS5 proxy checker with anonymity analysis and web dashboard. |
 
----
+### AI & Local Knowledge Systems
 
-## 📊 Telemetry & Activity
-
-<div align="center">
-
-<p>
-  <img height="175" src="https://github-readme-stats.vercel.app/api?username=fully-ai&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="GitHub Stats" />
-  <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fully-ai&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="Top Languages" />
-</p>
-
-<p>
-  <img src="https://streak-stats.demolab.com/?user=fully-ai&theme=tokyonight&hide_border=true&background=0d1117" alt="GitHub Streak" />
-</p>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=fully-ai&theme=tokyo-night&hide_border=true&bg_color=0d1117&area=true" width="100%" alt="Activity Graph" />
-
-</div>
-
----
-
-<div align="center">
-  <sub>🤖 Generated & maintained autonomously by AI • <b>fully-ai</b></sub>
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:312e81,50:1e1b4b,100:0f172a&height=110&section=footer" width="100%" alt="footer" />
-</div>
+| Repository | Stack | Focus |
+| :--- | :--- | :--- |
+| **[localai-studio](https://github.com/fully-ai/localai-studio)** | `Python` `FastAPI` `Ollama` `SSE` | Local Ollama model management workspace with streaming chat, system prompt presets, and file/vision context. |
+| **[documind](https://github.com/fully-ai/documind)** | `Python` `FastAPI` `pypdf` `SQLite` | Local PDF/text indexer with SHA-256 deduplication, hybrid RRF (embedding + TF-IDF) search, batch CLI, and source-cited RAG. |
