@@ -5,14 +5,14 @@
 
 <!-- Animated Typing Sub-headline -->
 <a href="https://github.com/fully-ai?tab=repositories">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=1100&color=38BDF8&center=true&vCenter=true&multiline=false&repeat=true&width=780&height=42&lines=%3E+Building+16+self-hosted+systems+in+Go+%C2%B7+Rust+%C2%B7+TypeScript+%C2%B7+Python;%3E+Container+orchestration%2C+security+scanners+%26+hybrid+RAG+engines;%3E+Zero-dependency+infrastructure+%E2%80%94+tested%2C+containerized+%26+CI-verified" alt="Animated terminal typing tagline" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=1100&color=38BDF8&center=true&vCenter=true&multiline=false&repeat=true&width=780&height=42&lines=%3E+Building+21+self-hosted+systems+in+Go+%C2%B7+Rust+%C2%B7+C%2B%2B+%C2%B7+TypeScript+%C2%B7+Python;%3E+Distributed+SQL%2C+SIEM%2FXDR%2C+orchestration%2C+event+streaming+%26+3D+engine;%3E+Zero-dependency+infrastructure+%E2%80%94+tested%2C+containerized+%26+CI-verified" alt="Animated terminal typing tagline" />
 </a>
 
 <br/>
 
 <!-- Live Identity & Ecosystem Badges -->
 <p>
-  <img src="https://img.shields.io/badge/Systems-16_Public_Repos-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="16 Public Repos" />
+  <img src="https://img.shields.io/badge/Systems-21_Public_Repos-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="21 Public Repos" />
   <img src="https://img.shields.io/badge/Releases-v0.1.0_%E2%86%92_v0.3.0-8b5cf6?style=for-the-badge&logo=semanticrelease&logoColor=white" alt="Releases" />
   <img src="https://img.shields.io/badge/CI%2FCD-GitHub_Actions-10b981?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI/CD" />
   <img src="https://img.shields.io/badge/Runtime-Self--Hosted_Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Self-Hosted Docker" />
@@ -37,7 +37,7 @@
 <div align="center">
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=go,rust,ts,py,react,fastapi,postgres,sqlite,redis,docker,linux,githubactions,prometheus,nginx&perline=7" alt="Tech Stack Icons" />
+  <img src="https://skillicons.dev/icons?i=go,rust,cpp,cmake,ts,py,react,fastapi,postgres,sqlite,redis,docker,linux,githubactions,prometheus,nginx&perline=8" alt="Tech Stack Icons" />
 </a>
 
 <br/><br/>
@@ -46,7 +46,7 @@
   <tr>
     <td align="center" width="25%">
       <b>🔧 Systems &amp; Control Planes</b><br/>
-      <sub>Go · Rust · WebSockets · Unix Sockets</sub>
+      <sub>Go · Rust · C++20 / OpenGL · Raft</sub>
     </td>
     <td align="center" width="25%">
       <b>🌐 Full-Stack &amp; Dashboards</b><br/>
@@ -54,11 +54,11 @@
     </td>
     <td align="center" width="25%">
       <b>🗄️ Storage &amp; Search</b><br/>
-      <sub>SQLite WAL · Postgres · BM25 · HNSW/RRF</sub>
+      <sub>SQLite WAL · Postgres · B+Tree/MVCC · RRF</sub>
     </td>
     <td align="center" width="25%">
       <b>🛡️ AppSec &amp; Delivery</b><br/>
-      <sub>SAST · SARIF · HMAC · Ed25519 · Docker</sub>
+      <sub>SAST · SARIF · SIEM/XDR · Docker</sub>
     </td>
   </tr>
 </table>
@@ -72,7 +72,7 @@
 ## 🗺️ Live Ecosystem Topology
 
 <div align="center">
-  <img src="./assets/ecosystem-flow.svg" width="100%" alt="fully-ai 16-system animated ecosystem architecture diagram" />
+  <img src="./assets/ecosystem-flow.svg" width="100%" alt="fully-ai 21-system animated ecosystem architecture diagram" />
 </div>
 
 <div align="center">
@@ -85,6 +85,7 @@
 
 | System | Release | CI | Stack | Capabilities |
 | :--- | :---: | :---: | :---: | :--- |
+| [**helixcloud**](https://github.com/fully-ai/helixcloud) | ![Release](https://img.shields.io/github/v/release/fully-ai/helixcloud?include_prereleases&style=flat-square&color=06b6d4) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/helixcloud/ci.yml?branch=main&style=flat-square) | `Go` `SQLite` | Self-hosted container & service orchestrator: explainable bin-pack scheduler, Linux OCI runtime, AES-GCM secrets & L7/LB proxy |
 | [**dockyard**](https://github.com/fully-ai/dockyard) | ![Release](https://img.shields.io/github/v/release/fully-ai/dockyard?style=flat-square&color=06b6d4) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/dockyard/ci.yml?branch=main&style=flat-square) | `Go` `React` | Self-hosted Docker & Compose control plane, live stats SSE, stack lifecycle & RBAC |
 | [**statusgrid**](https://github.com/fully-ai/statusgrid) | ![Release](https://img.shields.io/github/v/release/fully-ai/statusgrid?style=flat-square&color=06b6d4) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/statusgrid/ci.yml?branch=main&style=flat-square) | `Go` `React` | Multi-region HTTP/TCP/DNS probe scheduler, SLA percentiles & public incident boards |
 | [**syncforge**](https://github.com/fully-ai/syncforge) | ![Release](https://img.shields.io/github/v/release/fully-ai/syncforge?style=flat-square&color=06b6d4) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/syncforge/ci.yml?branch=main&style=flat-square) | `Rust` | Content-addressed chunking, Zstd compression, AES-GCM encrypted snapshots & drift diff |
@@ -97,6 +98,8 @@
 
 | System | Release | CI | Stack | Capabilities |
 | :--- | :---: | :---: | :---: | :--- |
+| [**titandb**](https://github.com/fully-ai/titandb) | ![Release](https://img.shields.io/github/v/release/fully-ai/titandb?include_prereleases&style=flat-square&color=8b5cf6) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/titandb/ci.yml?branch=main&style=flat-square) | `Rust` | Distributed ACID SQL engine: 4KB CRC32 paged storage, ARIES WAL REDO/UNDO, B+Tree, MVCC, deadlock detection & 3-node Raft replication |
+| [**streamforge**](https://github.com/fully-ai/streamforge) | ![Release](https://img.shields.io/github/v/release/fully-ai/streamforge?include_prereleases&style=flat-square&color=8b5cf6) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/streamforge/ci.yml?branch=main&style=flat-square) | `Go` | Distributed segmented commit-log broker: topic partitions, consumer groups, schema registry, stream filter/aggregate DSL & quorum failover |
 | [**querypilot**](https://github.com/fully-ai/querypilot) | ![Release](https://img.shields.io/github/v/release/fully-ai/querypilot?style=flat-square&color=8b5cf6) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/querypilot/ci.yml?branch=main&style=flat-square) | `Python` `TypeScript` | Multi-engine SQL studio (SQLite/Postgres/DuckDB), schema browser & EXPLAIN visualizer |
 | [**hookrelay**](https://github.com/fully-ai/hookrelay) | ![Release](https://img.shields.io/github/v/release/fully-ai/hookrelay?style=flat-square&color=8b5cf6) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/hookrelay/ci.yml?branch=main&style=flat-square) | `Python` `React` | Inbound webhook gateway, HMAC verification, dead-letter queue & deterministic replay |
 | [**featuredock**](https://github.com/fully-ai/featuredock) | ![Release](https://img.shields.io/github/v/release/fully-ai/featuredock?style=flat-square&color=8b5cf6) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/featuredock/ci.yml?branch=main&style=flat-square) | `TypeScript` `React` | Self-hosted feature flags, MurmurHash3 sticky rollouts, rules & SDK evaluator |
@@ -109,6 +112,7 @@
 
 | System | Release | CI | Stack | Capabilities |
 | :--- | :---: | :---: | :---: | :--- |
+| [**sentinelmesh**](https://github.com/fully-ai/sentinelmesh) | ![Release](https://img.shields.io/github/v/release/fully-ai/sentinelmesh?include_prereleases&style=flat-square&color=10b981) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/sentinelmesh/ci.yml?branch=main&style=flat-square) | `Go` `SQLite` | Defensive SIEM, EDR & XDR platform: Linux/Windows endpoint agents, YAML correlation rules, EWMA baseline anomaly, PCAP/DNS dissectors & SOC UI |
 | [**devguard**](https://github.com/fully-ai/devguard) | ![Release](https://img.shields.io/github/v/release/fully-ai/devguard?style=flat-square&color=10b981) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/devguard/ci.yml?branch=main&style=flat-square) | `Python` | Python AST taint + multi-language SAST, Shannon-entropy secret scanner & SARIF 2.1.0 |
 | [**vaultdrop**](https://github.com/fully-ai/vaultdrop) | ![Release](https://img.shields.io/github/v/release/fully-ai/vaultdrop?style=flat-square&color=64748b) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/vaultdrop/ci.yml?branch=main&style=flat-square) | `Python` | Zero-knowledge expiring secret & file sharing with client-side cryptography |
 | [**netscope**](https://github.com/fully-ai/netscope) | ![Release](https://img.shields.io/github/v/release/fully-ai/netscope?style=flat-square&color=64748b) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/netscope/ci.yml?branch=main&style=flat-square) | `Rust` | High-speed network diagnostics, port inspection, DNS lookups & TLS certificate probes |
@@ -122,6 +126,14 @@
 | :--- | :---: | :---: | :---: | :--- |
 | [**localai-studio**](https://github.com/fully-ai/localai-studio) | ![Release](https://img.shields.io/github/v/release/fully-ai/localai-studio?style=flat-square&color=64748b) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/localai-studio/ci.yml?branch=main&style=flat-square) | `Python` `React` | Unified workspace for local inference backends, prompt evaluation & streaming chat |
 | [**documind**](https://github.com/fully-ai/documind) | ![Release](https://img.shields.io/github/v/release/fully-ai/documind?style=flat-square&color=10b981) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/documind/ci.yml?branch=main&style=flat-square) | `Python` | Hybrid BM25 + semantic TF-IDF search fused via Reciprocal Rank Fusion & citations |
+
+---
+
+### 🎮 3D Engine & Graphics
+
+| System | Release | CI | Stack | Capabilities |
+| :--- | :---: | :---: | :---: | :--- |
+| [**astra-engine**](https://github.com/fully-ai/astra-engine) | ![Release](https://img.shields.io/github/v/release/fully-ai/astra-engine?include_prereleases&style=flat-square&color=f59e0b) | ![CI](https://img.shields.io/github/actions/workflow/status/fully-ai/astra-engine/ci.yml?branch=main&style=flat-square) | `C++20` `OpenGL` | Cross-platform 3D game engine & visual editor: ECS, glTF/GLB importer, PBR + shadow maps, physics/colliders, AstraScript bytecode VM & sample game |
 
 <br/>
 
@@ -137,7 +149,7 @@
 | 1. Self-Hosted First     -> Single-binary / Docker Compose ready, zero SaaS lock  |
 | 2. Verifiable Security   -> Audited with devguard AST SAST + entropy secret scan  |
 | 3. Deterministic Testing -> Reproducible unit & integration suites in GitHub CI   |
-| 4. Polyglot Precision    -> Go (infra), Rust (CLI/sync), TS (UI), Python (AI/API) |
+| 4. Polyglot Precision    -> Go (infra/SIEM), Rust (DB/sync), C++20 (3D), TS/Py  |
 +-----------------------------------------------------------------------------------+
 ```
 
