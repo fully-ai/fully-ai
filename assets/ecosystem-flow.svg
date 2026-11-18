@@ -39,7 +39,7 @@
 
   <!-- Header -->
   <text x="30" y="38" fill="#f8fafc" font-size="18" font-weight="700" class="sans">ECOSYSTEM TOPOLOGY</text>
-  <text x="236" y="38" fill="#64748b" font-size="13" class="mono">// 4 domains · 16 modular self-hosted systems</text>
+  <text x="268" y="38" fill="#64748b" font-size="13" class="mono">// 4 domains · 16 modular self-hosted systems</text>
 
   <!-- Central Spine Connector -->
   <line x1="155" y1="205" x2="945" y2="205" stroke="#334155" stroke-width="2"/>
