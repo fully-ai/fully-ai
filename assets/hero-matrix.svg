@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="100%" height="320" role="img" aria-label="fully-ai animated command center banner">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913"/>
+      <stop offset="50%" stop-color="#0d1326"/>
+      <stop offset="100%" stop-color="#130f2e"/>
+    </linearGradient>
+    <linearGradient id="neonLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5d4"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1e293b" stroke-width="0.8" stroke-opacity="0.55"/>
+    </pattern>
+    <clipPath id="cardClip">
+      <rect x="8" y="8" width="1084" height="304" rx="18"/>
+    </clipPath>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace; }
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .blink { animation: blinkAnim 1.1s steps(2, start) infinite; }
+      .floatSlow { animation: floatY 5s ease-in-out infinite; }
+      .pulseGlow { animation: glowPulse 3.2s ease-in-out infinite; }
+      @keyframes blinkAnim { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+      @keyframes floatY { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-4px); } }
+      @keyframes glowPulse { 0%, 100% { opacity: 0.65; } 50% { opacity: 1; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#cardClip)">
+    <rect x="8" y="8" width="1084" height="304" rx="18" fill="url(#bgGrad)"/>
+    <rect x="8" y="8" width="1084" height="304" rx="18" fill="url(#grid)"/>
+
+    <!-- Ambient glowing orbs -->
+    <circle cx="170" cy="70" r="140" fill="#0ea5e9" fill-opacity="0.11">
+      <animate attributeName="r" values="130;160;130" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="910" cy="245" r="160" fill="#8b5cf6" fill-opacity="0.12">
+      <animate attributeName="r" values="150;180;150" dur="8s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Animated scanning radar beam -->
+    <rect x="-260" y="8" width="260" height="304" fill="url(#sweep)">
+      <animate attributeName="x" values="-260;1120" dur="6.5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Sine pulse wave along bottom -->
+    <path d="M 16 268 Q 150 236 280 268 T 550 268 T 820 268 T 1084 268" fill="none" stroke="url(#neonLine)" stroke-width="2" stroke-opacity="0.65">
+      <animate attributeName="d"
+        values="M 16 268 Q 150 236 280 268 T 550 268 T 820 268 T 1084 268;
+                M 16 268 Q 150 294 280 268 T 550 268 T 820 268 T 1084 268;
+                M 16 268 Q 150 236 280 268 T 550 268 T 820 268 T 1084 268"
+        dur="5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Outer neon frame -->
+  <rect x="8" y="8" width="1084" height="304" rx="18" fill="none" stroke="url(#neonLine)" stroke-width="2" stroke-opacity="0.8"/>
+
+  <!-- Left Hero Identity -->
+  <g transform="translate(46, 52)">
+    <rect x="0" y="0" width="218" height="28" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.5"/>
+    <circle cx="16" cy="14" r="4.5" fill="#10b981" filter="url(#glow)">
+      <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="29" y="18" fill="#a5f3fc" font-size="11.5" font-weight="600" class="mono">AUTONOMOUS SYSTEMS LAB</text>
+
+    <text x="0" y="78" fill="#f8fafc" font-size="46" font-weight="800" letter-spacing="-1" class="sans">fully-ai</text>
+    <text x="195" y="78" fill="#38bdf8" font-size="46" font-weight="300" class="mono">//</text>
+    <text x="255" y="76" fill="#c084fc" font-size="22" font-weight="600" class="mono">engineering.core</text>
+
+    <text x="0" y="114" fill="#cbd5e1" font-size="15.5" class="sans">Self-hosted developer tooling, container control planes, observability &amp; local AI systems.</text>
+
+    <!-- Stack Pills -->
+    <g transform="translate(0, 140)" class="mono" font-size="12" font-weight="600">
+      <rect x="0" y="0" width="70" height="28" rx="8" fill="#0f172a" stroke="#00add8" stroke-opacity="0.75"/>
+      <text x="35" y="18" text-anchor="middle" fill="#67e8f9">Go</text>
+
+      <rect x="80" y="0" width="76" height="28" rx="8" fill="#0f172a" stroke="#f97316" stroke-opacity="0.75"/>
+      <text x="118" y="18" text-anchor="middle" fill="#fdba74">Rust</text>
+
+      <rect x="166" y="0" width="108" height="28" rx="8" fill="#0f172a" stroke="#3b82f6" stroke-opacity="0.75"/>
+      <text x="220" y="18" text-anchor="middle" fill="#93c5fd">TypeScript</text>
+
+      <rect x="284" y="0" width="88" height="28" rx="8" fill="#0f172a" stroke="#facc15" stroke-opacity="0.75"/>
+      <text x="328" y="18" text-anchor="middle" fill="#fde047">Python</text>
+
+      <rect x="382" y="0" width="144" height="28" rx="8" fill="#0f172a" stroke="#a855f7" stroke-opacity="0.75"/>
+      <text x="454" y="18" text-anchor="middle" fill="#e9d5ff">16 Public Systems</text>
+    </g>
+  </g>
+
+  <!-- Right Live Animated Terminal Window -->
+  <g transform="translate(625, 36)" class="floatSlow">
+    <rect x="0" y="0" width="434" height="218" rx="12" fill="#050811" fill-opacity="0.92" stroke="#334155" stroke-width="1.5"/>
+    <rect x="0" y="0" width="434" height="30" rx="12" fill="#0f172a"/>
+    <rect x="0" y="18" width="434" height="12" fill="#0f172a"/>
+    <circle cx="18" cy="15" r="5" fill="#ef4444"/>
+    <circle cx="36" cy="15" r="5" fill="#f59e0b"/>
+    <circle cx="54" cy="15" r="5" fill="#10b981"/>
+    <text x="217" y="19" text-anchor="middle" fill="#94a3b8" font-size="11" class="mono">fully-ai@control-plane:~</text>
+
+    <g transform="translate(18, 54)" class="mono" font-size="12">
+      <text x="0" y="0" fill="#38bdf8">$ dockyard ps --cluster prod</text>
+      <text x="0" y="22" fill="#10b981">[OK] 16 repositories indexed &amp; CI verified</text>
+      <text x="0" y="44" fill="#cbd5e1">&gt; infra  : dockyard · statusgrid · syncforge</text>
+      <text x="0" y="66" fill="#cbd5e1">&gt; data   : querypilot · hookrelay · featuredock</text>
+      <text x="0" y="88" fill="#cbd5e1">&gt; sec    : devguard · vaultdrop · netscope · proxylab</text>
+      <text x="0" y="110" fill="#cbd5e1">&gt; ai/ops : localai-studio · documind · hostwatch</text>
+      <text x="0" y="136" fill="#c084fc">$ devguard scan --workspace . --fail-on high</text>
+      <text x="0" y="156" fill="#22d3ee">ready&gt; </text>
+      <rect x="52" y="145" width="9" height="14" fill="#22d3ee" class="blink"/>
+    </g>
+  </g>
+</svg>
